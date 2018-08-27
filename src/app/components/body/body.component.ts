@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 
 export class BodyComponent{
 
+  // propiedad mostrar se crea para hacer uso del *ngIf con el boton Mostrar/Ocultar
+  mostrar = true;
+
+  frase: any = {
+    mensaje: 'Un gran poder requiere de una gran responsabilidad',
+    autor: 'Ben Parker'
+  };
 }

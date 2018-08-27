@@ -3,15 +3,16 @@
     <div class="col">
       <h1>*ngIf</h1>
       <hr>
-      <div class="card text-white bg-success mb-3" style="width: 100%;">
+      <div *ngIf="mostrar" class="card text-white bg-success mb-3" style="width: 100%;">
         <div class="card-body">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">{{frase.autor}}</h5>
+          <p class="card-text">{{frase.mensaje}}</p>
         </div>
       </div>
 
-      <button class="btn btn-outline-success btn-block" type="button" name="button">Mostrar/Ocultar</button>
+      <button (click)="mostrar = !mostrar" class="btn btn-outline-success btn-block" type="button" name="button">
+        Mostrar/Ocultar
+      </button>
 
     </div>
 
