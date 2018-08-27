@@ -20,11 +20,9 @@
       <h1>*ngFor</h1>
       <hr>
       <ul class="list-group">
-        <li class="list-group-item list-group-item-success">Cras justo odio</li>
-        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
-        <li class="list-group-item list-group-item-success">Morbi leo risus</li>
-        <li class="list-group-item list-group-item-success">Porta ac consectetur ac</li>
-        <li class="list-group-item list-group-item-success">Vestibulum at eros</li>
+        <li *ngFor="let personaje of personajes; let i = index" class="list-group-item list-group-item-success">
+          {{i+1}} - {{personaje}}
+        </li>
       </ul>
 
     </div>

@@ -14,4 +14,7 @@ export class BodyComponent{
     mensaje: 'Un gran poder requiere de una gran responsabilidad',
     autor: 'Ben Parker'
   };
+
+  // personajes es otra propiedad del BodyComponent y sera utilizado para la directriz *ngFor
+  personajes: string[] = ['Spiderman', 'Venom','Dr. Octopus'];
 }
